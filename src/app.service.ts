@@ -11,7 +11,7 @@ export class AppService {
     formData.append('video', file.buffer, file.originalname);
     const responseData = this.httpService
       .post(
-        'https://webhook.site/5ef61165-4d83-4663-95d4-e7f93a4fc215',
+        'http://localhost:3005/encoder',
         formData.getBuffer(),
         {
           headers: {
